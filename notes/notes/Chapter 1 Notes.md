@@ -1,9 +1,9 @@
 ---
-title: Chapter 1 Notes
-tags: [Notebooks/Statistical Rethinking, Notebooks/Tutorial]
-created: '2019-07-07T05:17:43.776Z'
-modified: '2019-07-07T11:52:53.659Z'
 attachments: [decision_tree.png]
+tags: [Notebooks/Statistical Rethinking]
+title: Chapter 1 Notes
+created: '2019-07-07T05:17:43.776Z'
+modified: '2019-12-08T23:37:35.981Z'
 ---
 
 # Chapter 1 Notes
@@ -110,5 +110,22 @@ Two reasons deductive falsification is impossible when it comes to science:
 
   ## The End Goal
   **Instead of choosing various black-box tools for NHST, learn to build and analyse multiple non-null models of natural phenomena**
+
+  ## Marble Example
+
+  1. A bag contains 4 marbles, which are either white or blue
+  2. We observe two blue (first and last) and one white or BWB, with replacement (drawn marbles are placed back into the bag)
+
+  - Garden of Forking Data
+    - Bayesian inference is similar to this process
+    - Each marble is treated as a possibility, so for each conjecture, marbles of the same colour (same data) are treated as individual marbles (different events) to represent the likelihood of a blue or white marble draw
+    - For each conjecture (combination from BWWW to WBBB), you can look at tree diagrams to see the number of ways the observed data can be produced
+      - BWWW = 3 ways
+      - BBWWW = 8 ways
+      - BBBWW = 9 ways
+    - These are realtive plausibilities. In Bayesian methods, plausibility = probability
+    - plausibility of conjecture after seeing data $\alpha$ probability of data based on eonjecture $\times$ conjecture prior probability
     
- 
+    - Drawing another marble from the bag, you can update plausibilities (Bayesian update) based on new data
+      - Say another blue marble is drawn, you can multiply the counts (3,8,9) by the plausibility (ways) of drawing another blue marble from the bag - (1,2,3) respectively
+    - You can also use other information (e.g. ratio of the count of each type of marble bag)
