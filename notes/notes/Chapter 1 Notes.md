@@ -1,18 +1,8 @@
----
-attachments: [decision_tree.png]
-tags: [Notebooks/Statistical Rethinking]
-title: Chapter 1 Notes
-created: '2019-07-07T05:17:43.776Z'
-modified: '2019-12-08T23:37:35.981Z'
----
-
 # Chapter 1 Notes
 
 ## Introduction
-
-- Engineering vs. pre-canned paths. Figure below demonstrates commonly-used decision tree. Often, people do not understand underlying structure, the models embodied by the procedures
-
-  ![decision_tree](@attachment/decision_tree.png)
+- Engineering vs. pre-canned paths. Figure below demonstrates commonly-used decision tree. Often, people do not understand underlying structure, the models embodied by the procedures``
+  ![decision_tree](../attachments/decision_tree.png)
 
 - Need to understand two things:
   
@@ -48,7 +38,7 @@ Two reasons deductive falsification is impossible when it comes to science:
 
   - Fail to reject - can't conclude evolution is neutral because some selection models predict the same distribution
 
-  ![models](@attachment/hypotheses_and_models.png)
+  ![models](../attachments/hypotheses_and_models.png)
 
   - Another issue is that is there one neutral model to test against? Even if there were one, so many mimic the one neutral model
 

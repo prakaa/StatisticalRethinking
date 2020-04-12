@@ -1,10 +1,3 @@
----
-tags: [Notebooks/Statistical Rethinking]
-title: Chapter 2 Notes
-created: '2019-07-07T11:53:57.624Z'
-modified: '2020-01-20T01:45:43.332Z'
----
-
 # Chapter 2 Notes
 
 ## When to be Bayesian
@@ -46,7 +39,7 @@ graph TD;
 - Give model initial plausibility of each value of $p$
   - In this case, value between 0 and 1 assumed to be equally probable
 - Condition on data to update information state - new confidence in each value of $p$ - dependent on the data
-![Icon](@attachment/bayesian_updating_intuition.png)
+![Icon](../attachments/bayesian_updating_intuition.png)
 - Data order is irrelevant, because model assumes order irrelevant
 - Sample size automatically embodied in posterior
   - Non-Bayesian inference relies on *asymptotic* behaviour so sample size is often important. Bayesian estimates are valid for any sample size, but their accuracy is dependent on the accuracy of the prior
@@ -126,7 +119,7 @@ graph TD;
         - Given the potential values of B, what is the probability of a potential value of A given the observed data?
         - That is, given the observed data A, what is the 
 
-      ![Icon](@attachment/prior_to_posterior.png)
+      ![Icon](../attachments/prior_to_posterior.png)
   ### Computing the posterior
   1. Analytical - small number of models can be done using this - integrals!
   2. Grid approximation (very intensive)
